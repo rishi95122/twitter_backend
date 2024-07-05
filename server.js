@@ -23,7 +23,7 @@ const app=express()
 app.use(express.json())
 app.use(cookieParser())
 const corsOptions = {
-    origin: 'http://localhost:3000',  // Adjust to your frontend domain
+    origin: 'https://twweeet.netlify.app',  // Adjust to your frontend domain
     credentials: true,  // Allow credentials (cookies, authorization headers, etc.)
      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   allowedHeaders: 'Content-Type, Authorization'
