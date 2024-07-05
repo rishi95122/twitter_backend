@@ -6,7 +6,9 @@ import cookieParser from "cookie-parser";
 const router =express()
 router.use(cookieParser())
 const protectRoute = async (req, res, next) => {
-    console.log("me",req.cookies.jwt)
+    console.log("me in me",req.cookies.jwt)
+	const cookieValue = req.cookies['jwt']
+	console.log(cookieValue)
 	try {
 		const token = req.cookies.jwt
 		if (!token) {
