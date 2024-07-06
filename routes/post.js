@@ -4,7 +4,6 @@ const router = express.Router();
 import jwt from "jsonwebtoken"
 import User from "../models/user.js";
 const protectRoute = async (req, res, next) => {
-    console.log("me",req.cookies.jwt)
 	try {
 		const token = req.cookies.jwt
 		if (!token) {
