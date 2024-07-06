@@ -23,7 +23,7 @@ const app=express()
 app.use(express.json())
 app.use(cookieParser())
 const corsOptions = {
- origin:"http://localhost:3000",
+ origin:"https://tweeet-two.vercel.app",
     credentials: true,  // Allow credentials (cookies, authorization headers, etc.)
      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   allowedHeaders: 'Content-Type, Authorization'
